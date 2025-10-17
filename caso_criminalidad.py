@@ -146,7 +146,7 @@ print("="*80 + "\n")
 # Calcular medias por tratamiento
 medias_tratamiento = df.groupby(['Zona', 'TipoDelito'])['Incidentes'].agg(['mean', 'std', 'count'])
 medias_tratamiento.columns = ['Media', 'Desv.Std', 'n']
-print("Medias por tratamiento (Zona × TipoDelito):")
+print("Medias por tratamiento (Zona X TipoDelito):")
 print(medias_tratamiento.round(2))
 
 # Medias marginales
@@ -377,4 +377,5 @@ print("="*80)
 print(f"\nArchivos generados:")
 print(f"  - analisis_criminalidad_puno.png (visualizaciones)")
 print(f"\nPara más detalles, revisar el sistema interactivo React.")
+
 print("="*80)
